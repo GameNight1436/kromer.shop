@@ -8,10 +8,8 @@
   -- Should be for the address given
   privateKey = "",
 
-  -- Your krist name (optional)
-  -- And each item will need a metaname set
-  -- Otherwise each item must be assigned an address
-  name = "",
+  --NOT CURRENTLY WORKING DO NOT USE!!!!!!!!!!
+  //name = "",
 
   -- List of inventories to pull shop items from
   inventories = {},

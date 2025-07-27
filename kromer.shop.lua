@@ -1,13 +1,6 @@
---- Modern Simple Krist Shop
+-- Kromer.shop based on MSKS
 
--- This is a simple implementation of a Krist shop.
--- See the github or config.lua and listings.lua for details.
-
--- Copyright 2022 Mason Gulu
--- Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
--- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+-- credit to MasonGulu for the original code
 
 local configFile = assert(fs.open("config", "r"), "Unable to open config file!")
 local config = assert(textutils.unserialise(configFile.readAll()), "Unable to unserialize config")
@@ -192,11 +185,11 @@ local function showErr(errorReason)
   monitor.c(1,errStartLine+1)
   monitor.write("WARNING")
   monitor.c(1,errStartLine+2)
-  monitor.write("This shop has stopped listening for Krist events")
+  monitor.write("This shop has stopped listening for Kromer events")
   monitor.c(1,errStartLine+3)
   monitor.write("Please report this to the shop owner/github")
   monitor.c(1,errStartLine+4)
-  monitor.write("https://github.com/MasonGulu/msks")
+  monitor.write("https://github.com/GameNight1436/kromer.shop")
   monitor.c(1,errStartLine+5)
   monitor.write("Supply this exit reason: ")
   monitor.c(1,errStartLine+6)

@@ -9,7 +9,7 @@
   privateKey = "",
 
   --NOT CURRENTLY WORKING DO NOT USE!!!!!!!!!!
-  //name = "",
+  name = "",
 
   -- List of inventories to pull shop items from
   inventories = {},

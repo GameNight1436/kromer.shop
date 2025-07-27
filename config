@@ -2,52 +2,52 @@
   -- Default address to use for transactions and returns 
   -- Needs to be the address of privateKey
   -- AND the address of the name, if applicable
-  address = "",
+  address = "your_krist_address",
 
   -- Private key of your wallet refunds will be sent from
   -- Should be for the address given
-  privateKey = "",
+  privateKey = "your_private_key",
 
   --NOT CURRENTLY WORKING DO NOT USE!!!!!!!!!!
-  name = "",
+  name = "myshop.kst",
 
   -- List of inventories to pull shop items from
-  inventories = {},
+  inventories = {"inv1", "inv2"},
 
   -- Monitor peripheral name
-  monitor = "",
+  monitor = "monitor_1",
 
   -- Turtle peripheral name on network
-  turtle = "",
+  turtle = "turtle_1",
 
   -- The name of the shop to be displayed on the monitor
-  shopName = "",
+  shopName = "My Shop",
 
   -- Contact name
-  contactName = "",
+  contactName = "Owner",
 
   -- Update Listings on Redstone (restock button)
   redstoneTriggersStockCalculations = false,
 
-  kristEndpoint = "https://krist.dev",
+  kristEndpoint = "https://krist.ceriat.net",
 
   -- Apply the given theme to term
   applyThemeToTerm = true,
 
   theme = {
     -- Color of main background
-    background = 0x042069, -- color 2 (0 indexed)
+    background = 32768, -- color 2 (0 indexed)
     -- Alternating colors for text listings on background
-    primaryText = 0x069420, -- color 1
-    secondaryText = 0x69b00b, -- color 0
+    primaryText = 1, -- color 1
+    secondaryText = 8, -- color 0
     -- Color of banner background
-    bannerColor = 0x6b00b9, -- color 3
+    bannerColor = 16, -- color 3
     -- Color of banner text
-    bannerText = 0,
+    bannerText = 2,
     -- Color to display when showing errors on background
-    errorColor = 0xb00b69, -- color 4
+    errorColor = 16384, -- color 4
     -- The scale of the connected monitor
-    textScale = 0.5,
+    textScale = 1,
   },
 
   -- Alternative theme that won't hurt your eyes as much
@@ -62,10 +62,10 @@
 
   -- Speaker to play sounds on
   -- nil for no sounds
-  speaker = nil,
+  speaker = "speaker_1",
 
   sounds = {
-    itemDispensed = "block.dispenser.dispense",
+    itemDispensed = "entity.item.pickup",
     saleSuccess = "entity.villager.yes",
     refundIssued = "entity.villager.no",
   }

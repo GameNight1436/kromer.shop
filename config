@@ -1,72 +1,28 @@
 {
-  -- Default address to use for transactions and returns 
-  -- Needs to be the address of privateKey
-  -- AND the address of the name, if applicable
   address = "your_krist_address",
-
-  -- Private key of your wallet refunds will be sent from
-  -- Should be for the address given
   privateKey = "your_private_key",
-
-  --NOT CURRENTLY WORKING DO NOT USE!!!!!!!!!!
   name = "myshop.kst",
-
-  -- List of inventories to pull shop items from
   inventories = {"inv1", "inv2"},
-
-  -- Monitor peripheral name
   monitor = "monitor_1",
-
-  -- Turtle peripheral name on network
   turtle = "turtle_1",
-
-  -- The name of the shop to be displayed on the monitor
   shopName = "My Shop",
-
-  -- Contact name
   contactName = "Owner",
-
-  -- Update Listings on Redstone (restock button)
   redstoneTriggersStockCalculations = false,
-
   kristEndpoint = "https://krist.ceriat.net",
-
-  -- Apply the given theme to term
   applyThemeToTerm = true,
-
   theme = {
-    -- Color of main background
-    background = 32768, -- color 2 (0 indexed)
-    -- Alternating colors for text listings on background
-    primaryText = 1, -- color 1
-    secondaryText = 8, -- color 0
-    -- Color of banner background
-    bannerColor = 16, -- color 3
-    -- Color of banner text
+    background = 32768,
+    primaryText = 1,
+    secondaryText = 8,
+    bannerColor = 16,
     bannerText = 2,
-    -- Color to display when showing errors on background
-    errorColor = 16384, -- color 4
-    -- The scale of the connected monitor
-    textScale = 1,
+    errorColor = 16384,
+    textScale = 1
   },
-
-  -- Alternative theme that won't hurt your eyes as much
-  -- theme = {
-  --   background = 0, -- black background
-  --   primaryText = 0xFFFFFF, -- white
-  --   secondaryText = 0xF0F0F0, -- grey
-  --   bannerColor = 0x000055, -- dark grey
-  --   bannerText = 0xFFFFFF, -- white banner text
-  --   errorColor = 0xFF0000,
-  -- },
-
-  -- Speaker to play sounds on
-  -- nil for no sounds
   speaker = "speaker_1",
-
   sounds = {
     itemDispensed = "entity.item.pickup",
     saleSuccess = "entity.villager.yes",
-    refundIssued = "entity.villager.no",
+    refundIssued = "entity.villager.no"
   }
 }
